@@ -1,0 +1,536 @@
+    /* "myFirstContract.sol":25:214  contract MyFirstContract {... */
+  mstore(0x40, 0x60)
+  jumpi(tag_1, iszero(callvalue))
+  0x0
+  dup1
+  revert
+tag_1:
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x0
+  codecopy
+  0x0
+  return
+stop
+
+sub_0: assembly {
+        /* "myFirstContract.sol":25:214  contract MyFirstContract {... */
+      mstore(0x40, 0x60)
+      jumpi(tag_1, lt(calldatasize, 0x4))
+      calldataload(0x0)
+      0x100000000000000000000000000000000000000000000000000000000
+      swap1
+      div
+      0xffffffff
+      and
+      dup1
+      0x17d7de7c
+      eq
+      tag_2
+      jumpi
+      dup1
+      0xc47f0027
+      eq
+      tag_3
+      jumpi
+    tag_1:
+      0x0
+      dup1
+      revert
+        /* "myFirstContract.sol":155:209  function getName() returns(string){... */
+    tag_2:
+      jumpi(tag_4, iszero(callvalue))
+      0x0
+      dup1
+      revert
+    tag_4:
+      tag_5
+      jump(tag_6)
+    tag_5:
+      mload(0x40)
+      dup1
+      dup1
+      0x20
+      add
+      dup3
+      dup2
+      sub
+      dup3
+      mstore
+      dup4
+      dup2
+      dup2
+      mload
+      dup2
+      mstore
+      0x20
+      add
+      swap2
+      pop
+      dup1
+      mload
+      swap1
+      0x20
+      add
+      swap1
+      dup1
+      dup4
+      dup4
+        /* "--CODEGEN--":23:24   */
+      0x0
+        /* "--CODEGEN--":8:108   */
+    tag_7:
+        /* "--CODEGEN--":33:36   */
+      dup4
+        /* "--CODEGEN--":30:31   */
+      dup2
+        /* "--CODEGEN--":27:29   */
+      lt
+        /* "--CODEGEN--":8:108   */
+      iszero
+      tag_8
+      jumpi
+        /* "--CODEGEN--":99:100   */
+      dup1
+        /* "--CODEGEN--":94:97   */
+      dup3
+        /* "--CODEGEN--":90:93   */
+      add
+        /* "--CODEGEN--":84:89   */
+      mload
+        /* "--CODEGEN--":80:81   */
+      dup2
+        /* "--CODEGEN--":75:78   */
+      dup5
+        /* "--CODEGEN--":71:74   */
+      add
+        /* "--CODEGEN--":64:70   */
+      mstore
+        /* "--CODEGEN--":52:54   */
+      0x20
+        /* "--CODEGEN--":49:50   */
+      dup2
+        /* "--CODEGEN--":45:48   */
+      add
+        /* "--CODEGEN--":40:55   */
+      swap1
+      pop
+        /* "--CODEGEN--":8:108   */
+      jump(tag_7)
+    tag_8:
+        /* "--CODEGEN--":12:26   */
+      pop
+        /* "--CODEGEN--":3:112   */
+      pop
+      pop
+      pop
+      swap1
+      pop
+      swap1
+      dup2
+      add
+      swap1
+      0x1f
+      and
+      dup1
+      iszero
+      tag_10
+      jumpi
+      dup1
+      dup3
+      sub
+      dup1
+      mload
+      0x1
+      dup4
+      0x20
+      sub
+      0x100
+      exp
+      sub
+      not
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap2
+      pop
+    tag_10:
+      pop
+      swap3
+      pop
+      pop
+      pop
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "myFirstContract.sol":96:151  function setName(string newName){... */
+    tag_3:
+      jumpi(tag_11, iszero(callvalue))
+      0x0
+      dup1
+      revert
+    tag_11:
+      tag_12
+      0x4
+      dup1
+      dup1
+      calldataload
+      swap1
+      0x20
+      add
+      swap1
+      dup3
+      add
+      dup1
+      calldataload
+      swap1
+      0x20
+      add
+      swap1
+      dup1
+      dup1
+      0x1f
+      add
+      0x20
+      dup1
+      swap2
+      div
+      mul
+      0x20
+      add
+      mload(0x40)
+      swap1
+      dup2
+      add
+      0x40
+      mstore
+      dup1
+      swap4
+      swap3
+      swap2
+      swap1
+      dup2
+      dup2
+      mstore
+      0x20
+      add
+      dup4
+      dup4
+      dup1
+      dup3
+      dup5
+      calldatacopy
+      dup3
+      add
+      swap2
+      pop
+      pop
+      pop
+      pop
+      pop
+      pop
+      swap2
+      swap1
+      pop
+      pop
+      jump(tag_13)
+    tag_12:
+      stop
+        /* "myFirstContract.sol":155:209  function getName() returns(string){... */
+    tag_6:
+        /* "myFirstContract.sol":182:188  string */
+      tag_14
+      jump	// in(tag_15)
+    tag_14:
+        /* "myFirstContract.sol":200:204  name */
+      0x0
+        /* "myFirstContract.sol":193:204  return name */
+      dup1
+      sload
+      0x1
+      dup2
+      0x1
+      and
+      iszero
+      0x100
+      mul
+      sub
+      and
+      0x2
+      swap1
+      div
+      dup1
+      0x1f
+      add
+      0x20
+      dup1
+      swap2
+      div
+      mul
+      0x20
+      add
+      mload(0x40)
+      swap1
+      dup2
+      add
+      0x40
+      mstore
+      dup1
+      swap3
+      swap2
+      swap1
+      dup2
+      dup2
+      mstore
+      0x20
+      add
+      dup3
+      dup1
+      sload
+      0x1
+      dup2
+      0x1
+      and
+      iszero
+      0x100
+      mul
+      sub
+      and
+      0x2
+      swap1
+      div
+      dup1
+      iszero
+      tag_17
+      jumpi
+      dup1
+      0x1f
+      lt
+      tag_18
+      jumpi
+      0x100
+      dup1
+      dup4
+      sload
+      div
+      mul
+      dup4
+      mstore
+      swap2
+      0x20
+      add
+      swap2
+      jump(tag_17)
+    tag_18:
+      dup3
+      add
+      swap2
+      swap1
+      0x0
+      mstore
+      keccak256(0x0, 0x20)
+      swap1
+    tag_19:
+      dup2
+      sload
+      dup2
+      mstore
+      swap1
+      0x1
+      add
+      swap1
+      0x20
+      add
+      dup1
+      dup4
+      gt
+      tag_19
+      jumpi
+      dup3
+      swap1
+      sub
+      0x1f
+      and
+      dup3
+      add
+      swap2
+    tag_17:
+      pop
+      pop
+      pop
+      pop
+      pop
+      swap1
+      pop
+        /* "myFirstContract.sol":155:209  function getName() returns(string){... */
+      swap1
+      jump	// out
+        /* "myFirstContract.sol":96:151  function setName(string newName){... */
+    tag_13:
+        /* "myFirstContract.sol":139:146  newName */
+      dup1
+        /* "myFirstContract.sol":132:136  name */
+      0x0
+        /* "myFirstContract.sol":132:146  name = newName */
+      swap1
+      dup1
+      mload
+      swap1
+      0x20
+      add
+      swap1
+      tag_21
+      swap3
+      swap2
+      swap1
+      jump	// in(tag_22)
+    tag_21:
+      pop
+        /* "myFirstContract.sol":96:151  function setName(string newName){... */
+      pop
+      jump	// out
+        /* "myFirstContract.sol":25:214  contract MyFirstContract {... */
+    tag_15:
+      0x20
+      mload(0x40)
+      swap1
+      dup2
+      add
+      0x40
+      mstore
+      dup1
+      0x0
+      dup2
+      mstore
+      pop
+      swap1
+      jump	// out
+    tag_22:
+      dup3
+      dup1
+      sload
+      0x1
+      dup2
+      0x1
+      and
+      iszero
+      0x100
+      mul
+      sub
+      and
+      0x2
+      swap1
+      div
+      swap1
+      0x0
+      mstore
+      keccak256(0x0, 0x20)
+      swap1
+      0x1f
+      add
+      0x20
+      swap1
+      div
+      dup2
+      add
+      swap3
+      dup3
+      0x1f
+      lt
+      tag_24
+      jumpi
+      dup1
+      mload
+      not(0xff)
+      and
+      dup4
+      dup1
+      add
+      or
+      dup6
+      sstore
+      jump(tag_23)
+    tag_24:
+      dup3
+      dup1
+      add
+      0x1
+      add
+      dup6
+      sstore
+      dup3
+      iszero
+      tag_23
+      jumpi
+      swap2
+      dup3
+      add
+    tag_25:
+      dup3
+      dup2
+      gt
+      iszero
+      tag_26
+      jumpi
+      dup3
+      mload
+      dup3
+      sstore
+      swap2
+      0x20
+      add
+      swap2
+      swap1
+      0x1
+      add
+      swap1
+      jump(tag_25)
+    tag_26:
+    tag_23:
+      pop
+      swap1
+      pop
+      tag_27
+      swap2
+      swap1
+      jump	// in(tag_28)
+    tag_27:
+      pop
+      swap1
+      jump	// out
+    tag_28:
+      tag_29
+      swap2
+      swap1
+    tag_30:
+      dup1
+      dup3
+      gt
+      iszero
+      tag_31
+      jumpi
+      0x0
+      dup2
+      0x0
+      swap1
+      sstore
+      pop
+      0x1
+      add
+      jump(tag_30)
+    tag_31:
+      pop
+      swap1
+      jump
+    tag_29:
+      swap1
+      jump	// out
+
+    auxdata: 0xa165627a7a72305820ebdbb5ae326fbe13882cb2c10f8885e304e60cbdc2f35c7e3246d6140f4236f20029
+}
